@@ -1,0 +1,37 @@
+.CompleteWrapper {
+  display: grid;
+  grid-column: 2 / 4;
+}
+
+.TitleComplete {
+  grid-row: 1;
+  grid-column: span 2;
+  justify-self: center;
+  align-self: center;
+  font-size: 32px;
+  font-weight: 800;
+}
+.SubTitleComplete {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  grid-row: 2;
+  grid-column: span 2;
+}
+
+.ButtonToShopComplete {
+  grid-row: 4;
+  grid-column: span 2;
+  height: 40px;
+  margin: 50px auto 20px !important;
+}
+
+@media screen and (max-width: 759px) {
+  .CompleteWrapper {
+    display: grid;
+    grid-column: 1 / 4;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+

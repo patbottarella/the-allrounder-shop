@@ -1,0 +1,89 @@
+.PaymentWrapper {
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 30px;
+  background-image: linear-gradient(
+    to top,
+    rgba(78, 108, 190, 0.185) 0%,
+    rgba(57, 154, 199, 0.171) 50%
+  );
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.TitlePayment {
+  grid-row: 1;
+  grid-column: span 2;
+  justify-self: center;
+  align-self: center;
+  font-size: 32px;
+  font-weight: 800;
+}
+.SubTitle {
+  grid-row: 2;
+  grid-column: span 2;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+.CaptchaButton {
+  grid-row: 3;
+  margin: 20px auto;
+}
+.ButtonBackPayment {
+  width: 160px;
+  height: 50px;
+  justify-self: center;
+  align-self: center;
+}
+.LinkStyle {
+  grid-row: 7;
+  grid-column: 1;
+}
+.TotalPrice {
+  grid-row: 4;
+  grid-column: span 2;
+  font-size: 18px;
+  font-weight: 700;
+  justify-self: center;
+}
+.CheckoutErrorMessage {
+  grid-row: 5;
+  grid-column: span 2;
+  font-size: 18px;
+  font-weight: 700;
+  justify-self: center;
+  color: red;
+}
+.ListProducts {
+  grid-row: 3;
+  grid-column: span 2;
+  justify-self: center;
+}
+.PayPalButton {
+  grid-row: 6;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 759px) {
+  .PaymentWrapper {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 30px;
+    background-image: linear-gradient( to top, rgba(78, 108, 190, 0.185) 0%, rgba(57, 154, 199, 0.171) 50% );
+    border-radius: 15px;
+    width: 80%;
+    margin: 30px auto;
+    position: relative;
+  }
+
+  .PayPalButton {
+    grid-row: 6;
+    margin: 20px auto;
+    max-width: 300px;
+  }
+}

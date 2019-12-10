@@ -1,0 +1,116 @@
+.CartWrapper {
+  display: grid;
+  grid-column: 2;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.Title {
+  text-align: center;
+}
+
+.MessageNoProducts {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.LinkStyle {
+  text-decoration: none;
+  color: black;
+  left: 50%;
+  right: 50%;
+  justify-self: center;
+}
+
+.ButtonToShop {
+  justify-self: center;
+}
+
+.ProductWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-style: dotted;
+  border-width: thin;
+  border-color: gray;
+  margin: 4px;
+  position: relative;
+}
+
+.ProductWrapperTotalPrice {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-style: dotted;
+  border-width: thin;
+  border-color: gray;
+  margin: 4px;
+}
+
+.Seperator {
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+}
+
+.ProductTitle {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: center;
+  align-self: center;
+}
+
+.ProductPrice {
+  grid-row: 2;
+  grid-column: 2;
+  justify-self: center;
+  align-self: center;
+}
+
+.ProductPriceTotalPrice {
+  grid-column: 1;
+  justify-self: center;
+  align-self: center;
+}
+.ButtonNext {
+  grid-column: 2;
+  justify-self: center;
+  align-self: center;
+  text-decoration: none;
+}
+
+.MuiStepConnector-lineVertical {
+  height: 100%;
+}
+
+.RemoveIconWrapper {
+  position: absolute;
+  right: 19px;
+  top: 12px;
+  font-size: 20px;
+  color: gray;
+}
+
+.RemoveIconWrapper:hover {
+  color: rgb(214, 34, 34);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 759px) {
+  .CartWrapper {
+    display: grid;
+    grid-column: 1 / 4;
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .RemoveIconWrapper {
+    top: 0;
+    right: 6px;
+  }
+
+  .ProductWrapper {
+    padding: 20px;
+  }
+}

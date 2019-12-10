@@ -1,0 +1,46 @@
+.HeaderWrapper {
+  background-image: linear-gradient(
+    to top,
+    rgb(78, 108, 190) 0%,
+    rgb(57, 154, 199) 50%
+  );
+}
+
+.HeaderTitle {
+  margin: 0 auto;
+}
+
+.CartItemsBadge {
+  background-image: linear-gradient(
+    to top,
+    rgb(38, 241, 106) 0%,
+    rgb(18, 185, 157) 50%
+  );
+  border-radius: 50%;
+  width: 18px;
+  padding: 2px;
+  position: absolute;
+  right: 22px;
+  top: 10px;
+  text-align: center;
+}
+
+.IconCart {
+  color: white;
+}
+
+.IconHome {
+  color: white;
+}
+
+.HomeIconWrapper {
+  position: absolute !important;
+  left: 22px;
+  top: 8px;
+}
+
+@media screen and (max-width: 759px) {
+  .HomeIconWrapper{
+    top: 5px;
+  }
+}

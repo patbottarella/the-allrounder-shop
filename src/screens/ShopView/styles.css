@@ -1,0 +1,14 @@
+.ProductWrapperShop {
+  display: grid;
+  grid-column: 1 / 4;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 2rem;
+  margin: 20px;
+}
+
+.TitleShop {
+  grid-column: span 4;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+}

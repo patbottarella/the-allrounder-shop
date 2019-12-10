@@ -1,0 +1,11 @@
+.AppWrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr 100px;
+  grid-template-rows: 1fr;
+}
+
+.StepperBar {
+  grid-column: 1;
+}

@@ -1,0 +1,21 @@
+.StepperWrapper {
+  height: 500px;
+  width: 150px;
+  position: fixed;
+  margin-top: 10px;
+}
+
+.MuiStepper-vertical {
+  height: 100%;
+}
+
+.StepLink {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 759px) {
+  .StepperWrapper {
+    display: none;
+  }
+}

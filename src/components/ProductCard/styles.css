@@ -1,0 +1,7 @@
+.ProductCard {
+  width: 256px;
+  height: auto;
+  margin: 0 5px;
+  justify-self: center;
+  text-align: center;
+}
